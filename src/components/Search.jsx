@@ -27,7 +27,7 @@ class Search extends React.Component {
     return (
       <div className="row">
         <input
-          placeholder="search"
+          placeholder="Search movies or series"
           type="search"
           className="validate"
           value={this.state.search}
@@ -35,7 +35,7 @@ class Search extends React.Component {
           onKeyDown={this.handlekey}
         />
         <button
-          className="btn search-btn"
+          className="btn search-btn light-green darken-1"
           onClick={() =>
             this.props.searchMovies(this.state.search, this.state.type)
           }
